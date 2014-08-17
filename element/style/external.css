@@ -1,0 +1,24 @@
+/**
+Some css properties are global (keyframes) and cannot be specified
+to to only apply to our shadow dom so we hack around this by including
+this file without scoping it.
+*/
+
+
+/**
+Bug 1018269 - we need to specify the keyframe outside of the web component...
+*/
+
+/**
+Moving backward because:
+http://www.chrisharrison.net/projects/progressbars2/ProgressBarsHarrison.pdf
+*/
+
+@-moz-keyframes moving-backward {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-111px);
+  }
+}
